@@ -1,0 +1,29 @@
+.linha{
+	width: 70%;
+	margin: 0 auto;
+}
+legend{
+	text-align: center;
+	color: darkred;
+}
+fieldset{
+	border-color: darkred;
+	border-radius: 10px 10px 5px 5px;
+	height: auto;
+	min-height: 50px;
+}
+.coluna-1{
+	text-align: center;
+}
+
+input[type=text]{
+	width: 50%
+	height: 25px;
+	font-size: 22px;
+}
+#pergunta1{
+	font-size: 20;
+	line-height: 32px;
+	font-family: cursive;
+	display: none;
+}

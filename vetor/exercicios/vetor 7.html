@@ -1,0 +1,33 @@
+<html>
+<meta charset = "UTF-8">
+<head>
+<title>Documento sem título</title>
+</head>
+<body>
+<script>
+var r, jooj,s,ss;
+var x=[];
+s=0
+ss=0
+do {
+r=parseInt(prompt("Digite um numero aleatório ou 0 para sair"));
+if (r!=0) {
+x.push(r);
+}
+}while(r!=0);
+for (jooj=0; jooj<x.length;jooj++) {
+		if (x[jooj]<20) {
+			document.write(x[jooj]+", ")
+			s+=x[jooj]
+		}
+		document.write("<br>")
+		if (x[jooj]>=20) {
+			document.write(x[jooj]+", ")
+			ss+=x[jooj];
+}
+}
+document.write("<br> a Média dos maiores que 20 é: "+ss/jooj);
+document.write("<br> a soma dos menores que 20 é: "+s);
+</script>
+</body>
+</html>

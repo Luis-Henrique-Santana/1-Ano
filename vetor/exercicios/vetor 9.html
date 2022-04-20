@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+var cont=0, gaveta;
+var x=[];
+do { 
+x [cont] = parseInt(prompt("Digite um numero aleatório"));
+cont++;
+}while(cont!=5);
+if (x[0]>=x[1]) {
+	gaveta = x[1]
+	x[1] = x[0]
+	x[0] = gaveta
+	
+}
+if (x[1]>=x[2]) {
+	gaveta = x[2]
+	x[2] = x[1]
+	x[1] = gaveta
+	
+}
+if (x[2]>=x[3]) {
+	gaveta = x[3]
+	x[3] = x[2]
+	x[2] = gaveta
+	
+}
+if (x[3]>=x[4]) {
+	gaveta = x[4]
+	x[4] = x[3]
+	x[3] = gaveta
+	
+}
+document.write(x[0]+" "+x[1]+" "+x[2]+" "+x[3]+" "+x[4])
+</script>
+</body>
+</html>

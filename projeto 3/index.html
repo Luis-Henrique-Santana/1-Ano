@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pro3</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+<body>
+<div class="linha">
+	<div class="coluna-1">
+		<fieldset>
+			<legend>Cadastrar jogador</legend>
+			<input type="text" id="jogador" name="jogador" placeholder="Ex. joselifa">
+			<button onclick="cadastrarjogador()">cadastrar</button>
+		</fieldset>
+	</div>
+</div>
+<br><br>
+<div class="linha">
+	<div class="pergunta" id="pergunta">
+		<fieldset>
+			<legend>Pergunta 1</legend>
+			Quando o Brasil foi descoberto?
+			<br>
+			<form name="quiz">
+			<input type="radio" id="p1" name="p1" value="1">Num dia de calor<br>
+			<input type="radio" id="p1" name="p1" value="2">Quando roubaram o cobertor<br>
+			<input type="radio" id="p1" name="p1" value="3">o Brasil?<br>
+			</form>
+		</fieldset>
+	</div>
+</div>
+<div class="linha">
+	<div class="pergunta" id="pergunta">
+		<fieldset>
+			<legend>Pergunta 2</legend>
+			Quando?
+			<br>
+			<form name="quiz">
+			<input type="radio" id="p2" name="p2" value="1">1987<br>
+			<input type="radio" id="p2" name="p2" value="2">1997<br>
+			<input type="radio" id="p2" name="p2" value="3">katrina<br>
+			</form>
+		</fieldset>
+	</div>
+</div>
+<br>
+<center>
+<button onclick="pontos()">responder</button>
+</center>
+<script type="text/javascript">
+	var pontos=0
+	function cadastrarjogador(){
+	var jogador = document.getElementById('jogador').value;
+	alert("Bem vindo "+jogador);
+	document.getElementById('pergunta').style.display = "block";
+}
+function resposta1(){
+	var r1 = document.quiz.p1.value;
+
+	if (r1==2) {
+		pontos=+1
+	}
+	else{
+	}
+}
+function resposta2(){
+	var r2 = document.quiz.p2.value;
+
+	if (r2==3) {
+		pontos=+1
+	}
+alert(pontos)
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<title>ex57</title>
+</head>
+<body>
+
+	<label for="numero1">Digite um número</label>
+	<input type="text" id="n1" name="numero1" placeholder="exemplo">
+	<br>
+	<br>
+	<label for="numero2">digite um numero</label>
+	<input type="text" id="n2" name="numero2">
+	<br>
+	<br>
+	<button value="somar" onclick="Somar()">Somar</button>
+	<button value="subtrair" onclick="Subtrair()">Subtrair</button>
+	<button value="multiplicar" onclick="Multiplicar()">Multiplicar</button>
+	<button value="dividir" onclick="Dividir()">Dividir</button>
+	<br>
+	<br>
+<div id="resultado"></div>
+	<script type="text/javascript">
+		function Somar(){
+		var n1 = document.getElementById('n1').value;
+		var n2 = document.getElementById('n2').value;
+		var result = parseInt(n1) + parseInt(n2);
+		document.getElementById("resultado").innerHTML = "soma: "+result;
+	}
+		function Subtrair(){
+			var n1 = document.getElementById('n1').value;
+			var n2 = document.getElementById('n2').value;
+			var result = parseInt(n1) - parseInt(n2);
+			document.getElementById('resultado').innerHTML = "subtração: "+result;
+		}
+		function Multiplicar(){
+			var n1 = document.getElementById('n1').value;
+			var n2 = document.getElementById('n2').value;
+			var result = parseInt(n1) * parseInt(n2);
+			document.getElementById('resultado').innerHTML = "multiplicação: "+result;
+		}
+		function Dividir(){
+			var n1 = document.getElementById('n1').value;
+			var n2 = document.getElementById('n2').value;
+			
+			var result = parseInt(n1) / parseInt(n2);
+			document.getElementById('resultado').innerHTML = "divisão: "+result;
+		}
+	
+	//atenção aos erros de digitação
+	</script>
+</body>
+</html>

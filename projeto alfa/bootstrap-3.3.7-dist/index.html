@@ -1,0 +1,211 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<input type="text" id="visor" name="visor" class="form-control" readonly="readonly">
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<input type="text" id="visorop" name="visorop" class="form-control" readonly="readonly">
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<input type="text" id="visor3" name="visor3" class="form-control" readonly="readonly">
+		</div>
+<div class="row">
+	<div class="col-md-9">
+		<div class="row">
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere7()">7</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere8()">8</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere9()">9</button>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere4()">4</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere5()">5</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere6()">6</button>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere1()">1</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere2()">2</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere3()">3</button>
+			</div>
+		</div>
+		<br>
+			<div class="row">
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insereponto()">.</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" onclick="insere0()">0</button>
+			</div>
+			<div class="col-md-4">
+				<button class="btn btn-default btn-lg" >LIMPAR</button>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-3">
+		<div class="row">
+			<div class="col-md-6">
+				<button id="op" class="btn btn-default btn-lg" onclick="soma()">+</button>				
+			</div>
+		</div><br>
+				<div class="row">
+			<div class="col-md-6">
+				<button id="op" class="btn btn-default btn-lg">-</button>				
+			</div>
+		</div><br>
+				<div class="row">
+			<div class="col-md-6">
+				<button id="op" class="btn btn-default btn-lg">X</button>				
+			</div>
+		</div><br>
+				<div class="row">
+			<div class="col-md-6">
+				<button id="op" class="btn btn-default btn-lg">/</button>				
+			</div>
+		</div>
+		<br>
+				<div class="row">
+			<div class="col-md-6">
+				<button id="op" class="btn btn-default btn-lg">=</button>				
+			</div>
+		</div>
+		<br>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+	function insere7(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="7"
+		}
+		else{
+			document.getElementById('visor3').value+="7"
+		}
+	}
+	function insere8(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="8"
+		}
+		else{
+			document.getElementById('visor3').value+="8"
+		}
+	}
+	function insere9(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="9"
+		}
+		else{
+			document.getElementById('visor3').value+="9"
+		}
+	}
+	function insere4(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="4"
+		}
+		else{
+			document.getElementById('visor3').value+="4"
+		}
+	}
+	function insere5(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="5"
+		}
+		else{
+			document.getElementById('visor3').value+="5"
+		}
+	}
+	function insere6(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="6"
+		}
+		else{
+			document.getElementById('visor3').value+="6"
+		}
+	}
+	function insere1(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="5"
+		}
+		else{
+			document.getElementById('visor3').value+="5"
+		}
+	}
+	function insere2(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="5"
+		}
+		else{
+			document.getElementById('visor3').value+="5"
+		}
+	}
+	function insere3(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="5"
+		}
+		else{
+			document.getElementById('visor3').value+="5"
+		}
+	}
+	function insere0(){
+		if(document.getElementById('visorop').value==""){
+			document.getElementById('visor').value+="5"
+		}
+		else{
+			document.getElementById('visor3').value+="5"
+		}
+	}
+	function soma(){
+		document.getElementById('visorop').value += "+"
+	}
+</script>
+<style type="text/css">
+.btn{
+	font-size: 50px;
+	font-family: Comic Sans MS;
+}
+	.container{
+		width: 80%;
+		margin: 0 auto
+	}
+	button{
+		width: 100%;
+		height: 100px;
+	}
+	#op{
+		height: 76px;
+	}
+	#visor, #visor3, #visorop{
+		width: 87%;
+		height: 80px;
+		font-size: 60px;
+		font-family: Somic Sans MS
+	}
+</style>
+</body>
+</html>

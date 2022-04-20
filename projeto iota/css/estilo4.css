@@ -1,0 +1,25 @@
+.container{
+	background-color: green;
+	height: 750px;
+	width: 90%;
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+}
+.nav{
+	
+	height: 550px;
+	background-color: red;
+}
+.conteudo{
+	
+	height: 550px;
+	background-color: gray;
+}
+.footer{
+	
+	height: 100px;
+	background-color: pink;
+}

@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>exercicio 4</title>
+</head>
+<body bgcolor="000000">
+<font size="+7" face="comic sans MS" color="ffffff">
+<script type="text/javascript">
+	var ar,n1,l1,l2,d,b,h,oi;
+	ar = parseInt(prompt("digite 1 para saber a área de um quadrado\n digite 2 para saber a área de um triangulo \n digite 3 para saber a área de um circulo \n digite 4 para sabeer área de um retangulo"));
+	if (ar == 1) {
+		n1=parseInt(prompt("qual a medida de um dos lados do quadrado?")) 
+		document.write("A área do quadrado é "+n1*n1)
+	}
+	if (ar == 2) {
+		b=parseInt(prompt("qual a base do triangulo?")) 
+		h=parseInt(prompt("qual a altura do triangulo?"))
+		document.write("a area do triangulo é "+(b*h)/2)
+	}
+	if (ar == 3) {
+	d=parseInt(prompt("qual diametro do circulo?"))
+	oi = d*6.28
+		document.write("A área do circulo é aproximadamente"+oi)
+	}
+	if (ar == 4) {
+		l1=parseInt(prompt("qual a medida do maior do retangulo?"))
+		l2=parseInt(prompt("qual a medida do menor lado do retangulo?"))
+		document.write("A área do retangulo é "+l1*l2)
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<fieldset>
+				<legend>
+					editor basico- java script
+
+				</legend>
+			</fieldset>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form name="envia" class="form-group">
+				<label>digite seu texto:</label>
+				<textarea class="form-control" id="mensagem" rows="4"></textarea>
+				<br>
+				</form>
+				<button class="btn btn-success" onclick="EnviaMsg()" id="btn-enviar">enviar</button>
+			</div>
+		</div>
+		<br>
+		<hr>
+		<br>
+		<div class="row">
+			<div class="col-md-1">
+				<button class="btn btn-info" onclick="MudaFonte()">
+					Alterar fonte
+				</button>
+			</div>
+			<div class="col-md-1">
+				<input type="color" id="cor" onchange="MudarCor()" class="form-control">
+			</div>
+		
+		<div class="col-md-1">
+			<select id="tamanho" class="form-control" onclick="MudarTamanho()">
+				<option value="12px">12</option>
+				<option value="14px">14</option>
+				<option value="16px">16</option>
+				<option value="18px">18</option>
+				<option value="20px">20</option>
+			</select>
+		</div>
+	</div>
+		<div class="row">
+			<div class="col-md-12">
+				<form name="recebe" class="form-group">
+					<label>Voce digitou:</label><br>
+					<textarea class="form-control" id="msg" rows="6" readonly="readonly"></textarea>
+				</form>
+			</div>
+		</div>
+</div>
+<script type="text/javascript">
+	function EnviaMsg(){
+
+		var texto = document.envia.mensagem.value;
+		if (texto=="") {
+			alert("CAMPO VAZIO????")
+			document.envia.mensagem.style.borderColor = "red";
+			document.envia.mensagem.focus();
+		}
+		else{
+			document.recebe.msg.value=texto;
+			document.envia.mensagem.style.borderColor = "green";
+		}
+	}
+	function MudaFonte(){
+		document.recebe.msg.style.fontFamily = "Broadway"
+
+	}
+	function MudarCor(){
+		var cor = document.getElementById('cor').value;
+		document.recebe.msg.style.color = cor;
+	}
+	function MudarTamanho(){
+		var size = document.getElementById('tamanho').value;
+		document.recebe.msg.style.fontSize=size;
+	}
+</script>
+<style type="text/css">
+	.container{
+		width: 80%;
+		margin: 0 auto;
+	}
+textarea{
+	resize: none;
+	min-height: 250px;
+	max-height: 250px;
+}
+#tamanho{
+	width: 100%
+}
+#msg{
+	min-height: 350px;
+	max-height: 350px;
+}
+</style>
+</body>
+</html>
